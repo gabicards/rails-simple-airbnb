@@ -1,0 +1,17 @@
+<h1>All our Flats (<%= @flats.count %>)</h1>
+
+<div class="row justify-content-between">
+  <% @flats.each do |flat| %>
+    <div class="card p-0" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><%= flat.name %></h5>
+        <p class="card-text"><%= flat.description %>.</p>
+        <!-- GUESTS AND PRICE HERE -->
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn btn-primary my-2">More Info</a>
+      </div>
+    </div>
+  <% end %>
+</div>
